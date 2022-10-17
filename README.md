@@ -20,5 +20,6 @@ Also, you can check the code for this part in `web_application` folder.
 
 ------
 
-#Contact
+# Contact
+
 If you want to contact author, write an e-mail on ihorhetman99@gmail.com or visit linkedin profile https://www.linkedin.com/in/ihor-hetman/.
