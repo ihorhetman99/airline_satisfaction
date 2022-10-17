@@ -20,7 +20,7 @@ def read_data():
 
 @st.cache(allow_output_mutation=True)
 def load_model():
-    model = joblib.load('model\model.joblib')
+    model = joblib.load('model/model.joblib')
     return model
 
 
