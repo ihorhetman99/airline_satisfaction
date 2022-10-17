@@ -5,6 +5,11 @@ import joblib
 import matplotlib.pyplot as plt
 from PIL import Image
 
+st.set_page_config(page_title="Airline satisfation",
+                   page_icon=":airplane:",
+                   layout="wide")
+
+
 
 @st.cache(allow_output_mutation=True)
 def read_data():
@@ -28,7 +33,10 @@ test_df["Customer Type"] = test_df["Customer Type"].replace("disloyal Customer",
 train_df["Type of Travel"] = train_df["Type of Travel"].replace("Personal Travel", "Personal travel")
 test_df["Type of Travel"] = test_df["Type of Travel"].replace("Personal Travel", "Personal travel")
 
+
 # web part
+
+
 st.title("Airline passenger satisfaction :airplane:")
 
 header_image = Image.open('./web_application/images/HeaderImage-1.png')
@@ -68,11 +76,22 @@ st.markdown("Our goal is to predict **Satisfaction level**. There are two levels
 
 st.markdown("### Model :desktop_computer:")
 st.markdown("In this project it was used a Random forest algorithm. After a backward feature selection process,"
-            "model managed to get next values of metrics performance")
+            "model managed to get next values of metrics performance:")
 col1, col2, col3 = st.columns(3)
 col1.metric("Accuracy", 0.903)
 col2.metric("Precision", 0.889)
 col3.metric("Recall", 0.889)
+
+with st.expander("Feature selection process info"):
+    st.markdown("Backward feature selection process was done based on exploratory data analysis + using feature "
+                "importance of the Random forest model.")
+    initial_set_features = Image.open('./web_application/images/initial_set_features.png')
+    used_features_model = Image.open('./web_application/images/used_features_model.png')
+    col1, col2, col3 = st.columns(3)
+    col1.image(initial_set_features)
+    col2.image(Image.open('./web_application/images/right-arrow.png'), width=200)
+    col3.image(used_features_model)
+
 
 st.markdown("### Predicting part :zap:")
 st.markdown("Here you are proposed to generate answers of imaginary client and to see which feedback he or she will "
@@ -120,6 +139,8 @@ with st.form(key='input_form'):
     new_X = np.array([new_X], dtype=object)
 
     submitted = st.form_submit_button('Submit new input', help='To create a new input, press this button')
+    if submitted:
+        st.success("Input is created")
 
 if st.button('Predict satisfaction level', help='To make a prediction, press this button.'):
     y_pred = model.predict(new_X)
@@ -144,7 +165,9 @@ features_rf = ['Type of Travel',
 st.markdown("To understand how much impact does a feature in the model, you can take a look at their importance.")
 
 feat_imp = pd.DataFrame({'feature name ': features_rf, 'feature importance': model['rf'].feature_importances_})
-feat_imp_plot = plt.figure(figsize=(10, 6))
+feat_imp_plot = plt.figure(figsize=(12, 2.5))
+#feat_imp_plot.set_figheight(2)
+#feat_imp_plot.set_figwidth(8)
 plt.bar(feat_imp.iloc[:, 0], feat_imp.iloc[:, 1])
 plt.xticks(rotation=45)
 plt.title("Feature importance of variables, measured in %")
