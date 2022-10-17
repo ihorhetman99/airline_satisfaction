@@ -7,6 +7,7 @@ This project contained of two parts. In the first one, I trained a Random forest
 |Accuracy|Precision|Recall|
 |-----| ----- | ----- |
 |0.9 | 0.89 | 0.89 |
+
 You can check the code for this part in the `model` folder.  
 
 In the second part I created a web application using a open-source framework [Streamlit](https://streamlit.io/). In this application I added a possibility for user to create a custom input and predict an imaginary answer. 
