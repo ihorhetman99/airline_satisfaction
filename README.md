@@ -11,6 +11,7 @@ This project contained of two parts. In the first one, I trained a Random forest
 You can check the code for this part in the `model` folder.  
 
 In the second part I created a web application using a open-source framework [Streamlit](https://streamlit.io/). In this application I added a possibility for user to create a custom input and predict an imaginary answer. 
-You can check the code for this part in `web_application` folder.
+You can visit the web application on https://ihorhetman99-airline-satisfaction-web-applicationapp-afkxpy.streamlitapp.com/.
+Also, you can check the code for this part in `web_application` folder.
 
 If you want to contact author, write an e-mail on ihorhetman99@gmail.com or visit linkedin profile https://www.linkedin.com/in/ihor-hetman/.
