@@ -3,7 +3,7 @@
 This is a Data science pet project made by Ihor Hetman. 
 In this project I took a [dataset](https://www.kaggle.com/datasets/teejmahal20/airline-passenger-satisfaction) from a passanger survey made by airline companies in order to create a machine learning model that predict satisfaction level and to find out factors which have the biggest impact on customer's decision.
 
-For visual purposes it was created a web application https://ihorhetman99-airline-satisfaction-web-applicationapp-afkxpy.streamlitapp.com/.
+For visual purposes it was created a [web application](https://ihorhetman99-airline-satisfaction-web-applicationapp-afkxpy.streamlitapp.com/).
 
 -----
 
