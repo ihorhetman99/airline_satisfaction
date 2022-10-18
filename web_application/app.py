@@ -20,7 +20,7 @@ def read_data():
 
 @st.cache(allow_output_mutation=True)
 def load_model():
-    model = joblib.load('model\model.joblib')
+    model = joblib.load('model/model.joblib')
     return model
 
 
@@ -166,8 +166,6 @@ st.markdown("To understand how much impact does a feature in the model, you can 
 
 feat_imp = pd.DataFrame({'feature name ': features_rf, 'feature importance': model['rf'].feature_importances_})
 feat_imp_plot = plt.figure(figsize=(12, 2.5))
-#feat_imp_plot.set_figheight(2)
-#feat_imp_plot.set_figwidth(8)
 plt.bar(feat_imp.iloc[:, 0], feat_imp.iloc[:, 1])
 plt.xticks(rotation=45)
 plt.title("Feature importance of variables, measured in %")
