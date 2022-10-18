@@ -50,7 +50,7 @@ st.markdown(
     "in order to improve their service, increase their income and decrease the amount of complains from the clients.")
 
 st.markdown(
-    "In this web application you can see the research results based on the public dataset. In that (this/it) I "
+    "In this web application you can see the research results based on the public dataset. In this research I "
     "investigated which factors impact customers satisfaction.")
 
 st.markdown("You will have a chance to try yourself as an owner of an airline company and simulate a response from the "
