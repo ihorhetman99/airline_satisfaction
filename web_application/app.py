@@ -182,4 +182,5 @@ with st.sidebar:
     st.markdown("Please contact me by following links:")
     st.markdown("https://www.linkedin.com/in/ihor-hetman/")
     st.markdown("ihorhetman99@gmail.com")
+    st.markdown("Check code on https://github.com/ihorhetman99/airline_satisfaction")
     st.caption("You can close the sidebar in order to stay focused :)")
