@@ -8,7 +8,7 @@ For visual purposes it was created a [web application](https://ihorhetman99-airl
 -----
 
 # Description of a project
-This project contained of two parts. In the first one, I trained a Random forest and obtained a  classifier with next values of performance metrics:
+This project contained of two parts. In the first one, I made a exploratory data analysis (EDA) on the dataset. Based on the EDA's results and observations it was trained a Random forest and obtained a classifier with next values of performance metrics:
 |Accuracy|Precision|Recall|
 |-----| ----- | ----- |
 |0.9 | 0.89 | 0.89 |
