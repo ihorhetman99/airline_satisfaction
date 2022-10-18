@@ -36,8 +36,6 @@ train_cat_col = train_data.select_dtypes(include="object").columns
 test_con_col = test_data.select_dtypes(include=numerics).columns
 test_cat_col = test_data.select_dtypes(include="object").columns
 
-
-#encoding categorical variables into numerical
 for cat in train_cat_col:
     le = LabelEncoder()
     train_data[cat] = le.fit_transform(train_data[cat])
