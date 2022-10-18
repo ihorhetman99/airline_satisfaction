@@ -8,7 +8,7 @@ For visual purposes it was created a [web application](https://ihorhetman99-airl
 -----
 
 # Description of a project
-This project contained of two parts. In the first one, I made a exploratory data analysis (EDA) on the dataset. Based on the [EDA's results] (https://github.com/ihorhetman99/airline_satisfaction/blob/main/model/airline-eda.ipynb) and observations it was trained a Random forest and obtained a classifier with next values of performance metrics:
+This project contained of two parts. In the first one, I made a exploratory data analysis (EDA) on the dataset. Based on the [EDA's results](https://github.com/ihorhetman99/airline_satisfaction/blob/main/model/airline-eda.ipynb) and observations it was trained a Random forest and obtained a classifier with next values of performance metrics:
 |Accuracy|Precision|Recall|
 |-----| ----- | ----- |
 |0.9 | 0.89 | 0.89 |
