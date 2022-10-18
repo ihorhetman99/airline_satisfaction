@@ -172,6 +172,7 @@ plt.title("Feature importance of variables, measured in %")
 st.pyplot(feat_imp_plot)
 
 st.success("### That is it. I hope that you enjoyed this little project. :smile:")
+st.caption("Check code on https://github.com/ihorhetman99/airline_satisfaction")
 
 # sidebar
 with st.sidebar:
@@ -182,5 +183,4 @@ with st.sidebar:
     st.markdown("Please contact me by following links:")
     st.markdown("https://www.linkedin.com/in/ihor-hetman/")
     st.markdown("ihorhetman99@gmail.com")
-    st.markdown("Check code on https://github.com/ihorhetman99/airline_satisfaction")
     st.caption("You can close the sidebar in order to stay focused :)")
