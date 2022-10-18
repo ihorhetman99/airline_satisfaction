@@ -20,7 +20,7 @@ def read_data():
 
 @st.cache(allow_output_mutation=True)
 def load_model():
-    model = joblib.load('model/model.joblib')
+    model = joblib.load('model\model.joblib')
     return model
 
 
@@ -50,8 +50,8 @@ st.markdown(
     "in order to improve their service, increase their income and decrease the amount of complains from the clients.")
 
 st.markdown(
-    "In this web application you will see results of a research based on the public dataset in which I investigated "
-    "which factors impact customers satisfaction. ")
+    "In this web application you can see the research results based on the public dataset. In that (this/it) I "
+    "investigated which factors impact customers satisfaction.")
 
 st.markdown("You will have a chance to try yourself as an owner of an airline company and simulate a response from the "
             "client to see a prediction of the trained model.")
@@ -59,8 +59,8 @@ st.markdown("You will have a chance to try yourself as an owner of an airline co
 st.markdown("### Dataset :open_book:")
 st.markdown("Let's get closer to the dataset. It was obtained from the Kaggle competition "
             "https://www.kaggle.com/datasets/teejmahal20/airline-passenger-satisfaction. "
-            "In a nutshell, it contains different categories of services provided by airline company as well as some "
-            "data about passenger such as age, for example.")
+            "In a nutshell, it contains different services categories provided by airline company and some "
+            "data about passenger (e.g., age).")
 
 st.markdown("You can get detailed information about variables below")
 with st.expander("Detailed info"):
@@ -180,8 +180,8 @@ with st.sidebar:
     sidebar_image = Image.open('./web_application/images/photo_linkedin.png')
     st.image(sidebar_image)
     st.markdown("# Hi! :wave:")
-    st.markdown("This is a Data science pet project made by Ihor Hetman. I hope that you will enjoy it!")
-    st.markdown("If you want to contact me, you can do that via several sources:")
+    st.markdown("This is a Data science pet project made by Ihor Hetman. Enjoy using my app!")
+    st.markdown("Please contact me by following links:")
     st.markdown("https://www.linkedin.com/in/ihor-hetman/")
     st.markdown("ihorhetman99@gmail.com")
     st.caption("You can close the sidebar in order to stay focused :)")
